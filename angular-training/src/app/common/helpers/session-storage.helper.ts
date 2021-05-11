@@ -6,6 +6,17 @@ export class SessionStorageService {
     const futureStep = sessionStorage.getItem('step') || "";
     return futureStep;
   }
+  public static saveToken() {
+    sessionStorage.setItem('token', "1");
+  }
+  public static get authorized(): boolean {
+    return !!sessionStorage.getItem('token');
+  }
+
+  public static clearToken(){
+    sessionStorage.removeItem('token');
+  }
+
   public static clear(): void {
     sessionStorage.clear();
   }

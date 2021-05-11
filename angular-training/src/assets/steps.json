@@ -126,5 +126,19 @@
                 "link": "https://angular.io/guide/pipes"
             }
         ]
+    },
+    {
+        "order": 14,
+        "description": "Add guard",
+        "usedResources": [
+            {
+                "resource": "ng generate guard",
+                "link": "https://angular.io/cli/generate"
+            },
+            {
+                "resource": "Routing",
+                "link": "https://angular.io/guide/router"
+            }
+        ]
     }
 ]

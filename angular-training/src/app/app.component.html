@@ -1,4 +1,8 @@
 <div>
+  <button *ngIf="!isAuthorized" (click)="login()">Login</button>
+  <button *ngIf="isAuthorized" (click)="logout()">Logout</button>
+</div>
+<div>
   Root component
 </div>
 <ul>
