@@ -18,6 +18,6 @@ export class DashboardComponent implements OnInit {
   }
 
   private getSteps(): void {
-    this.finishedSteps = this.dashboardService.getSteps();
+    this.dashboardService.getSteps().subscribe((steps: Array<Step>) => this.finishedSteps = steps)
   }
 }
