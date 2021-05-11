@@ -139,13 +139,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "app",
+      "ng-training",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "app",
+      "ng-training",
       "kebab-case"
     ]
   }
