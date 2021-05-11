@@ -10,10 +10,12 @@ import { DashboardService } from './dashboard.service';
 })
 export class DashboardComponent implements OnInit {
   public finishedSteps: Array<Step> = [];
+  public futureStep: string = "";
 
   constructor(private dashboardService: DashboardService) { }
 
   public ngOnInit(): void {
+    this.futureStep = history.state?.stepName;
     this.getSteps();
   }
 

@@ -96,5 +96,15 @@
                 "link": "https://angular.io/guide/forms-overview"
             }
         ]
+    },
+    {
+        "order": 11,
+        "description": "Programatic navigation",
+        "usedResources": [
+            {
+                "resource": "Angular Router",
+                "link": "https://angular.io/guide/router"
+            }
+        ]
     }
 ]
