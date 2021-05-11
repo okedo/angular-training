@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Step } from '../../common/interfaces/step.interface';
 import { DashboardService } from './dashboard.service';
+import { SessionStorageService } from '../../common/helpers/session-storage.helper';
+import { Step } from '../../common/interfaces/step.interface';
 
 @Component({
   selector: 'ng-training-dashboard',
@@ -15,8 +16,13 @@ export class DashboardComponent implements OnInit {
   constructor(private dashboardService: DashboardService) { }
 
   public ngOnInit(): void {
-    this.futureStep = history.state?.stepName;
+    this.futureStep = SessionStorageService.futureStep;
     this.getSteps();
+  }
+
+  public clear(): void {
+    this.futureStep = "";
+    SessionStorageService.clear();
   }
 
   private getSteps(): void {

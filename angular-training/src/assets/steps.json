@@ -106,5 +106,15 @@
                 "link": "https://angular.io/guide/router"
             }
         ]
+    },
+    {
+        "order": 12,
+        "description": "Save data in session storage",
+        "usedResources": [
+            {
+                "resource": "Session Storage",
+                "link": "https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage"
+            }
+        ]
     }
 ]
