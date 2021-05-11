@@ -1,1 +1,5 @@
-<p>home works!</p>
+<form (ngSubmit)="submitStep()" [formGroup]="form">
+    <label for="step-description">Step Description</label>
+    <input formControlName="step" name="step-description" placeholder="Add step description" type="text">
+    <button [disabled]="form.invalid" type="submit">Submit</button>
+</form>

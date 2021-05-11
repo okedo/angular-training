@@ -86,5 +86,15 @@
                 "link": "https://angular.io/api/common/http/HttpClient"
             }
         ]
+    },
+    {
+        "order": 10,
+        "description": "Add form",
+        "usedResources": [
+            {
+                "resource": "Angular Forms",
+                "link": "https://angular.io/guide/forms-overview"
+            }
+        ]
     }
 ]
