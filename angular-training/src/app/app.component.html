@@ -1,19 +1,21 @@
 <div>
-  <ol>
-    <li>
-      Created application using <b>ng new angular-training --routing=true</b>
-    </li>
-    <li>
-      Fixed application for IE11 
-    </li>
-    <li>
-      Configure app prefixes
-    </li>
-    <li>
-      Add dashoard module <b>ng g m dashboard --routing=true</b>
-    </li>
-    <li>
-      Add dashoard component <b>ng g c dashboard</b>
-    </li>
-  </ol>
+  Root component
+</div>
+<ul>
+  <li>
+    <a [routerLink]="['/home']" routerLinkActive="active">
+      Home
+    </a>
+  </li>
+  <li>
+    <a [routerLink]="['/dashboard']" routerLinkActive="active">
+      Dashboard
+    </a>
+  </li>
+</ul>
+<div>
+  Routed comonent
+  <router-outlet>
+
+  </router-outlet>
 </div>
