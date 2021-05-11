@@ -1,6 +1,6 @@
 <div *ngIf="futureStep">
-    <span>future step is</span>
-    <span>{{futureStep}}</span>
+    <span>future step is </span>
+    <span>{{futureStep | titlecase}}</span>
 </div>
 <ul class="steps-list">
     <li *ngFor="let step of finishedSteps;">

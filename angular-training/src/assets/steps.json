@@ -116,5 +116,15 @@
                 "link": "https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage"
             }
         ]
+    },
+    {
+        "order": 13,
+        "description": "Use pipe",
+        "usedResources": [
+            {
+                "resource": "Pipes",
+                "link": "https://angular.io/guide/pipes"
+            }
+        ]
     }
 ]
